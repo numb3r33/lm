@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "lm"
+  site-url: "https://numb3r33.github.io/lm"
+  description: "Train LM from scratch"
+  repo-branch: main
+  repo-url: "https://github.com/numb3r33/lm"
