@@ -1,0 +1,122 @@
+[
+  {
+    "objectID": "bpe_training.html",
+    "href": "bpe_training.html",
+    "title": "BPE Training",
+    "section": "",
+    "text": "# Placeholder for BPE training implementation",
+    "crumbs": [
+      "BPE Training"
+    ]
+  },
+  {
+    "objectID": "experiments.html",
+    "href": "experiments.html",
+    "title": "Experiments",
+    "section": "",
+    "text": "# Placeholder for experiment code\n# This notebook will import from the bpe_tokenizer_scratch library",
+    "crumbs": [
+      "Experiments"
+    ]
+  },
+  {
+    "objectID": "utils.html",
+    "href": "utils.html",
+    "title": "Utils",
+    "section": "",
+    "text": "# Placeholder for utility functions",
+    "crumbs": [
+      "Utils"
+    ]
+  },
+  {
+    "objectID": "bpe_tokenizer_class.html",
+    "href": "bpe_tokenizer_class.html",
+    "title": "Tokenizer Class",
+    "section": "",
+    "text": "# Placeholder for Tokenizer class implementation",
+    "crumbs": [
+      "Tokenizer Class"
+    ]
+  },
+  {
+    "objectID": "bpe_unicode.html",
+    "href": "bpe_unicode.html",
+    "title": "Unicode Problems & Answers",
+    "section": "",
+    "text": "(Answers to be filled in here)",
+    "crumbs": [
+      "Unicode Problems & Answers"
+    ]
+  },
+  {
+    "objectID": "bpe_unicode.html#problem-unicode1-understanding-unicode",
+    "href": "bpe_unicode.html#problem-unicode1-understanding-unicode",
+    "title": "Unicode Problems & Answers",
+    "section": "",
+    "text": "(Answers to be filled in here)",
+    "crumbs": [
+      "Unicode Problems & Answers"
+    ]
+  },
+  {
+    "objectID": "bpe_unicode.html#problem-unicode2-unicode-encodings",
+    "href": "bpe_unicode.html#problem-unicode2-unicode-encodings",
+    "title": "Unicode Problems & Answers",
+    "section": "Problem (unicode2): Unicode Encodings",
+    "text": "Problem (unicode2): Unicode Encodings\n(Answers to be filled in here)",
+    "crumbs": [
+      "Unicode Problems & Answers"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "lm",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation.",
+    "crumbs": [
+      "lm"
+    ]
+  },
+  {
+    "objectID": "index.html#developer-guide",
+    "href": "index.html#developer-guide",
+    "title": "lm",
+    "section": "Developer Guide",
+    "text": "Developer Guide\nIf you are new to using nbdev here are some useful pointers to get you started.\n\nInstall lm in Development mode\n# make sure lm package is installed in development mode\n$ pip install -e .\n\n# make changes under nbs/ directory\n# ...\n\n# compile to have changes apply to lm\n$ nbdev_prepare",
+    "crumbs": [
+      "lm"
+    ]
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "lm",
+    "section": "Usage",
+    "text": "Usage\n\nInstallation\nInstall latest from the GitHub repository:\n$ pip install git+https://github.com/numb3r33/lm.git\nor from conda\n$ conda install -c numb3r33 lm\nor from pypi\n$ pip install lm\n\n\nDocumentation\nDocumentation can be found hosted on this GitHub repository’s pages. Additionally you can find package manager specific guidelines on conda and pypi respectively.",
+    "crumbs": [
+      "lm"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "lm",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2",
+    "crumbs": [
+      "lm"
+    ]
+  },
+  {
+    "objectID": "adapters.html",
+    "href": "adapters.html",
+    "title": "Test Adapters",
+    "section": "",
+    "text": "# Placeholder for test adapter functions",
+    "crumbs": [
+      "Test Adapters"
+    ]
+  }
+]
