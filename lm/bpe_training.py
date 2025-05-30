@@ -21,6 +21,26 @@ import time # For example usage/test block
 # GPT-2 pre-tokenization regex from the technical specification
 PAT_REGEX: Pattern = re.compile(r"""'(?:[sdmt]|ll|ve|re)| ?\p{L}+| ?\p{N}+| ?[^\s\p{L}\p{N}]+|\s+(?!\S)|\s+""")
 
+# %% ../nbs/02_bpe_training.ipynb 5
+def _process_segment(segment_text: str, pat_regex: Pattern) -> List[List[int]]:
+    """Internal helper function to pre-tokenize a text segment and convert to UTF-8 byte lists.
+
+    Args:
+        segment_text: A string segment of the corpus.
+        pat_regex: The pre-compiled regex pattern for pre-tokenization.
+
+    Returns:
+        A list where each inner list contains the UTF-8 byte values (integers 0-255)
+        for a pre-token found in the segment_text.
+    """
+    pre_tokens_as_int_lists: List[List[int]] = []
+    if not segment_text: # Handle empty segments gracefully
+        return []
+    for match in pat_regex.finditer(segment_text):
+        pre_token_str = match.group(0)
+        pre_tokens_as_int_lists.append(list(pre_token_str.encode('utf-8')))
+    return pre_tokens_as_int_lists
+
 # %% ../nbs/02_bpe_training.ipynb 7
 def train_bpe(
     input_path: str,         # Path to the raw text file
