@@ -41,6 +41,36 @@ def _process_segment(segment_text: str, pat_regex: Pattern) -> List[List[int]]:
         pre_tokens_as_int_lists.append(list(pre_token_str.encode('utf-8')))
     return pre_tokens_as_int_lists
 
+# %% ../nbs/02_bpe_training.ipynb 6
+def _replace_pair_in_sequence(
+    sequence: Tuple[int, ...],
+    pair_to_replace: Tuple[int, int],
+    new_id: int
+) -> Tuple[int, ...]:
+    """Replaces all occurrences of a pair of token IDs with a new token ID in a sequence.
+
+    Args:
+        sequence: The tuple of token IDs representing a word/token.
+        pair_to_replace: A tuple of two token IDs (e.g., (id1, id2)) to be replaced.
+        new_id: The new token ID that will replace the pair.
+
+    Returns:
+        A new tuple of token IDs with all occurrences of the pair replaced.
+    """
+    new_sequence_list: List[int] = []
+    i = 0
+    while i < len(sequence):
+        # Check if the current position and the next form the pair to replace
+        if i + 1 < len(sequence) and \
+           sequence[i] == pair_to_replace[0] and \
+           sequence[i+1] == pair_to_replace[1]:
+            new_sequence_list.append(new_id)
+            i += 2 # Move past the pair
+        else:
+            new_sequence_list.append(sequence[i])
+            i += 1 # Move to the next token
+    return tuple(new_sequence_list)
+
 # %% ../nbs/02_bpe_training.ipynb 7
 def train_bpe(
     input_path: str,         # Path to the raw text file
